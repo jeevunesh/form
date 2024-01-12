@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+.inner-box{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    border: 5px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.box{
+    padding-top: 4.2rem;
+}
+
+.innerbox{
+    color: red;
+}
+.box{
+    margin-top: 10rem;
+}
+.container-fluid{
+    background-color: rgba(130, 130, 244, 0.476);
+    height:100vh;
+}
+@media only screen and (min-height: 200vh) {
+    .container-fluid {
+      background-color: lightblue;
+    }
+  }
+
+table, th, td {
+    border:1px solid black;
+    height: 25px;
+  }
+  table{
+    height:10px;
+  }
+  .gender1{
+    /* display: inline-block; */
+    /* margin-left: 5.3rem; */
+  }
+  .radio{
+    
+  }
+  /* mytablzz .edit(
+    backgroundcolor:red;
+    color:white;
+  ) */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <link rel="stylesheet" href="form.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+            
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+    <body>
+        <div class="container-fluid">
+            <h1 class="text-center pt-3">FORM VALIDATION</h1>
+            <form  action="" method=""
+                class="box row justify-content-around" name="myform">
+                <div class="inner-box col-5 col-lg-5 col-md-12 col-sm-12">
+                    <h2 class="text-danger">Form:</h2>
+                    <div class="row mt-3">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="name" class="h6" required>USER NAME</label>
+                        </div>
+                        <div class="col-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="text" class="pe-lg-4 " id="name" ><br>
+                            <p id="demo" class="innerbox"></p>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="password" class="h6">PASSWORD</label>
+                        </div>
+                        <div class="col-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="password" class="pe-lg-4" id="pass1"><br>
+                            <p id="demo1" class="innerbox"></p>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="password" class="h6">CONFIRM-PASSWORD</label>
+                        </div>
+                        <div class="col-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="password" class="pe-lg-4"
+                                id="confir-pass"><br>
+                            <p id="demo2" class="innerbox"></p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="email" class="h6">EMAIL</label>
+                        </div>
+                        <div class="col-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="text" class="pe-lg-4" id="email"><br>
+                            <p id="demo3" class="innerbox"></p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="html" class="h6">GENDER</label>
+                        </div>
+                        <div class="col-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="radio" name="gender" id="genders" value="male" >
+                            <label for="html">MALE</label>
+                            <input type="radio" name="gender" id="genders" class="ms-lg-3"
+                                value="female">
+                            <label for="css">FEMALE</label>
+                            <p id="demo5" class="innerbox"></p>
+                        </div>
+                    </div>
+                
+                    <div class="row text-center mt-3">
+                        <div class="col-12">
+                            <button type="button" class="ps-5 pt-2 pb-2 pe-5" onclick="validation()"
+                               >SUBMIT</button>
+                            <button class="ps-5 pt-2 pb-2 pe-5" type="button"
+                                onclick="resetForm()">CLEAR</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+          
+
+                <table class="col-5 col-lg-5 col-md-12 col-sm-12">
+                    <tr>
+                        <th>User name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+
+                    </tr>
+                    <tbody id="mytable"></tbody>
+                </table>
+       
+        </div> 
+        <script src="form.js"></script>
+        </body>
+    </html>
